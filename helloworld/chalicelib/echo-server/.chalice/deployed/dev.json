@@ -1,0 +1,23 @@
+{
+  "resources": [
+    {
+      "name": "default-role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::292107540214:role/echo-server-dev",
+      "role_name": "echo-server-dev"
+    },
+    {
+      "name": "websocket_message",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:sa-east-1:292107540214:function:echo-server-dev-websocket_message"
+    },
+    {
+      "name": "websocket_api",
+      "resource_type": "websocket_api",
+      "websocket_api_url": "wss://hi7hgsnm0m.execute-api.sa-east-1.amazonaws.com/api/",
+      "websocket_api_id": "hi7hgsnm0m"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
